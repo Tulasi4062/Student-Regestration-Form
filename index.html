@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Regestration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="form-header">
+            <img src="undraw_focused_m9bj.png" alt="logo" class="logo">
+
+            <h1>Student Regestration Form</h1>
+        </header>
+        <main>
+            <div class="form-card">
+                <form>
+                    <h3>Student Details</h3>
+                    <label for="name">Name</label>
+                    <div class="flex">
+                        <select id="prefix" name="prefix">
+                         <option value="mr">Mr.</option>
+                         <option value="miss">Miss.</option>
+                         <option value="mrs">Mrs.</option>
+                        </select>
+                        
+                        <input type="text" id="name" name="name" placeholder="First Name">
+                        <input type="text" id="name" name="name" placeholder="Last Name">
+                        
+                    </div>
+                    <label></label> 
+                        
+                        <div class="radio">
+                            <label for="gender">Gender..</label>
+                            <label><input type="radio" name="gender" value="male" /> Male</label>
+                            <label><input type="radio" name="gender" value="female" /> Female</label>
+                        </div>
+                        <label for="DOB">Date of birth</label>
+                        <input type="date" id="DOB" name="DOB">     
+
+
+
+
+
+                        <h3>Contact Details</h3>
+                        <label for="phone">Mobile Number</label>
+                        <div class="flex">
+                            <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number">
+                            <input type="tel" id="phone" name="phone" placeholder="Alternative Mobile Number">
+                        </div>
+
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail" placeholder="Enter Email">
+
+
+
+
+
+                        <h3>Address</h3>
+                        <label>Select Location</label>
+                        <select id="city" name="city">
+                            <option>Choose location</option>
+                            <option value="">Choose Location</option>
+                            <option value="Kakinada">Kakinada</option>
+                            <option value="Samarlakot">Samarlakot</option>
+                            <option value="Thuni">Thuni</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Banglore">Banglore</option>
+                        </select>
+
+                        <div class="address">
+                            <input type="text" id="address" name="address" placeholder="Address 1">
+                            <input type="text" id="address" name="address" placeholder="Address 2">
+                        </div>
+
+                        <h3>Course</h3>
+                        <label>Skills..</label>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="skills" value="python"/>Python</label>
+                                <label><input type="checkbox" id="skills" value="java"/>Java</label>
+                            <label><input type="checkbox" id="skills" value="c++"/>C++</label>
+                        </div>
+
+                     <label>Select Domain</label>   
+                     <div class="checkbox">
+                        <label><input type="checkbox" id="skills" value="machinelearning"/>Machinelearning</label>
+                                <label><input type="checkbox" id="skills" value="html"/>HTML</label>
+                            <label><input type="checkbox" id="skills" value="mern"/>MERN</label>
+                     </div>
+                     <div class="upload">
+                        <h3>Documents</h3>
+                        <label for="resume">Upload Resume</label>
+                        <input type="file" id="resume" name="resume">
+                        <br>
+                        <label for="profile">Upload Photo</label>
+                        <input type="file" id="profile" name="profile">
+                     </div>
+                     <label >feedback </label><br>
+                        <textarea id="message" name="message" placeholder="Enter your feedback" row="5" columns="50"></textarea>
+                     <br><br>
+                     <button>Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+              <div class="name">Desighned by <span>Tulasi</span></div>
+            </div>
+        </footer>
+    </body>
+</html>
