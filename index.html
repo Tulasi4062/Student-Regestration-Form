@@ -16,16 +16,15 @@
             <div class="form-card">
                 <form>
                     <h3>Student Details</h3>
-                    <label for="name">Name</label>
+                    <label for="name" >Name</label>
                     <div class="flex">
                         <select id="prefix" name="prefix">
                          <option value="mr">Mr.</option>
                          <option value="miss">Miss.</option>
-                         <option value="mrs">Mrs.</option>
                         </select>
                         
-                        <input type="text" id="name" name="name" placeholder="First Name">
-                        <input type="text" id="name" name="name" placeholder="Last Name">
+                        <input type="text" id="name" name="name" placeholder="First Name" style="border:1px solid gray">
+                        <input type="text" id="name" name="name" placeholder="Last Name" style="border:1px solid gray">
                         
                     </div>
                     <label></label> 
@@ -36,21 +35,21 @@
                             <label><input type="radio" name="gender" value="female" /> Female</label>
                         </div>
                         <label for="DOB">Date of birth</label>
-                        <input type="date" id="DOB" name="DOB">     
+                        <input type="date" id="DOB" name="DOB" style="border:1px solid gray">     
 
 
 
 
 
                         <h3>Contact Details</h3>
-                        <label for="phone">Mobile Number</label>
+                        <label for="phone">Mobile Number <span style="color: red; font-size: 25px;">*</span></label>
                         <div class="flex">
-                            <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number">
-                            <input type="tel" id="phone" name="phone" placeholder="Alternative Mobile Number">
+                            <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number" style="border:1px solid gray">
+                            <input type="tel" id="phone" name="phone" placeholder="Alternative Mobile Number" style="border:1px solid gray">
                         </div>
 
-                        <label for="mail">Email</label>
-                        <input type="email" id="mail" name="mail" placeholder="Enter Email">
+                        <label for="mail">Email <span style="color: red; font-size: 25px;">*</span></label>
+                        <input type="email" id="mail" name="mail" placeholder="Enter Email" style="border:1px solid gray">
 
 
 
@@ -69,42 +68,53 @@
                         </select>
 
                         <div class="address">
-                            <input type="text" id="address" name="address" placeholder="Address 1">
-                            <input type="text" id="address" name="address" placeholder="Address 2">
+                            <input type="text" id="address" name="address" placeholder="Address 1" style="border:1px solid gray">
+                            <input type="text" id="address" name="address" placeholder="Address 2" style="border:1px solid gray">
                         </div>
 
                         <h3>Course</h3>
-                        <label>Skills..</label>
+                        <label style="font-weight: bold;">Skills.. </label>
                         <div class="checkbox">
-                            <label><input type="checkbox" id="skills" value="python"/>Python</label>
-                                <label><input type="checkbox" id="skills" value="java"/>Java</label>
-                            <label><input type="checkbox" id="skills" value="c++"/>C++</label>
+                            <label><input type="checkbox" id="skills" value="python " style="margin-top: 10px;" />Python </label>
+                                <label><input type="checkbox" id="skills" value="java " style="margin-top:10px;"/>Java </label>
+                            <label><input type="checkbox" id="skills" value="c++ " style="margin-top:10px;"/>C++ </label>
+                            <label><input type="checkbox" id="skills" value="R " style="margin-top:10px;"/>R </label>
+                            <label><input type="checkbox" id="skills" value="ML " style="margin-top:10px;"/>ML </label>
+                            <label><input type="checkbox" id="skills" value="Nodejs " style="margin-top:10px;"/>Nodejs </label>
+                            <label><input type="checkbox" id="skills" value="ai " style="margin-top:10px;"/>AI</label>
+                            <label><input type="checkbox" id="skills" value="js " style="margin-top:10px;"/>JS</label>
                         </div>
 
-                     <label>Select Domain</label>   
+                     <label style="font-weight: bold;">Select Domain</label>   
                      <div class="checkbox">
-                        <label><input type="checkbox" id="skills" value="machinelearning"/>Machinelearning</label>
-                                <label><input type="checkbox" id="skills" value="html"/>HTML</label>
-                            <label><input type="checkbox" id="skills" value="mern"/>MERN</label>
+                        <label><input type="checkbox" id="skills" value="machinelearning" style="margin-top:10px;" />Machine learning </label>
+                                <label><input type="checkbox" id="skills" value="html" style="margin-top:10px;"/>HTML </label>
+                            <label><input type="checkbox" id="skills" value="mern" style="margin-top:10px;"/>MERN </label>
+                            <label><input type="checkbox" id="skills" value="javascript" style="margin-top:10px;"/>Javascript </label>
+                                <label><input type="checkbox" id="skills" value="sql" style="margin-top:10px;"/>SQL </label>
+                            <label><input type="checkbox" id="skills" value="php" style="margin-top:10px;"/>PHP </label>
+                            <label><input type="checkbox" id="skills" value="c#" style="margin-top:10px;"/>C# </label>
+                                <label><input type="checkbox" id="skills" value="mongodb" style="margin-top:10px;"/>Mongo DB </label>
+                            <label><input type="checkbox" id="skills" value="expressjs" style="margin-top:10px;"/>Express JS </label>
                      </div>
                      <div class="upload">
                         <h3>Documents</h3>
                         <label for="resume">Upload Resume</label>
-                        <input type="file" id="resume" name="resume">
+                        <input type="file" id="resume" name="resume" style="border:1px solid gray">
                         <br>
                         <label for="profile">Upload Photo</label>
-                        <input type="file" id="profile" name="profile">
+                        <input type="file" id="profile" name="profile" style="border:1px solid gray">
                      </div>
                      <label >feedback </label><br>
-                        <textarea id="message" name="message" placeholder="Enter your feedback" row="5" columns="50"></textarea>
+                        <textarea id="message" name="message" placeholder="Enter your feedback" row="5" columns="50" style="border:1px solid gray"></textarea>
                      <br><br>
-                     <button>Submit</button>
+                     <button style="font-weight: bold;">Submit</button>
                 </form>
             </div>
         </main>
         <footer>
             <div class="wrapper">
-              <div class="name">Desighned by <span>Tulasi</span></div>
+              <div class="name">Designed by <span style="font-weight: bold;">Tulasi</span></div>
             </div>
         </footer>
     </body>
